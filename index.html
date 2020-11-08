@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>US Square Tile Map</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Did the political landscape change in each state for the past two
+        decades?
+      </h1>
+      <p>
+        All the media attention was on the swing states during the four-day
+        vote-counting for the 2020 election. While waiting the election result
+        and following news everyday, I became curious about the political
+        leaning of each state, especially on two questions: How blue are
+        blue-wall states? And how many times have swing states flipped?
+      </p>
+      <p>
+        Thus, with all the free time at my hands, I decided to make this map. I
+        found Charlie Smart's
+        <a href="https://github.com/charliesmart/d3-square-tile-map"
+          >d3-square-tile-map</a
+        >
+        and based on his map, I filled each state square with 11 cubes -- each
+        represents the winner of the presidential election year from 1976 to
+        2016. (By the time of building this, whether Biden or Trump would win
+        the election was not clear yet.)
+      </p>
+      <div class="history-pret-result">
+        <div id="tooltip">
+          <table>
+            <caption></caption>
+            <tbody>
+              <tr class="year">
+                <td>Year:</td>
+                <td></td>
+              </tr>
+              <tr class="winner">
+                <td>Winner:</td>
+                <td></td>
+              </tr>
+              <tr class="winparty">
+                <td>Party:</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  <script src="https://d3js.org/d3-color.v2.min.js"></script>
+  <script src="https://d3js.org/d3-format.v2.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+  <script src="https://d3js.org/d3-time.v2.min.js"></script>
+  <script src="https://d3js.org/d3-time-format.v3.min.js"></script>
+  <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+  <script type="module" src="main.js"></script>
+</html>

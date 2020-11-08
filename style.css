@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 60%;
+  margin: 120px auto 20px;
+}
+h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.history-pret-result {
+  position: relative;
+  width: 870px;
+  padding: 0 10px;
+  margin: 60px auto;
+}
+.selected {
+  opacity: 1;
+  stroke: #222222;
+}
+#tooltip {
+  display: none;
+  position: absolute;
+  min-width: 180px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  border: 2px solid #666666;
+  padding: 10px 10px;
+}
+caption {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+  border-bottom: 1px dashed #999999;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #666666;
+}
+a:visited {
+  color: #666666;
+}
